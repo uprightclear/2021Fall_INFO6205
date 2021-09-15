@@ -9,7 +9,7 @@ public class Main {
     }
 
     //Time Complexity: o(nlogn)
-    //Space Complexity: o(logn)
+    //Space Complexity: o(logn) (o(logn) is the space complexity that quickSort uses)
     public static int solution(int[] nums) {
         quickSort(nums);
         int ans = 0;
@@ -34,7 +34,7 @@ public class Main {
 
     private static  int partition(int[] arr, int low, int high){
 
-        int pivot = arr[high]; // last element is the pivot
+        int pivot = arr[high];
         int wall = low -1;
         for(int i = low; i < high; i ++){
             if(arr[i] < pivot){
