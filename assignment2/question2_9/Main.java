@@ -20,7 +20,7 @@ public class Main {
             }
         }
 
-        //left = right + 1,
+        // left = right + 1,
         // The number of integers missing before arr[right] is (arr[right] - right - 1)
         // There are still k - (arr[right] - right - 1) integers need to be added
         // So the result = arr[right] + (k - (arr[right] - right - 1)) = k + left
