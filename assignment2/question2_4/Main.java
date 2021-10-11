@@ -6,7 +6,9 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         int[] example = {3, 2, 3, 6, 7, 2, 3};
+        int[] example2 = {1};
         System.out.println(findElement(example));
+        System.out.println(findElement(example2));
     }
 
     //Time Complexity: o(n)
@@ -45,7 +47,7 @@ public class Main {
         count2 = 0;
         for(int num : nums) {
             if(candidate1 == num) count1++;
-            if(candidate2 == num) count2++;
+            else if(candidate2 == num) count2++;
         }
 
         if(count1 > nums.length / 3) ans.add(candidate1);
