@@ -2,7 +2,8 @@ package IsFoldable;
 
 public class Node {
     int data;
-    Node left, right;
+    public Node left;
+    public Node right;
 
     public Node(int data)
     {
